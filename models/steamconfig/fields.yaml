@@ -1,0 +1,27 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+tabs:
+    fields:
+      # Main settings
+      api_key:
+        label: marin.steamauth::lang.strings.api_key_label
+        comment: marin.steamauth::lang.strings.api_key_comment
+        description: marin.steamauth::lang.strings.api_key_description
+        type: text
+        required: true
+        tab: marin.steamauth::lang.tabs.main
+      redirect:
+        label: marin.steamauth::lang.strings.redirect_label
+        comment: marin.steamauth::lang.strings.redirect_comment
+        description: marin.steamauth::lang.strings.redirect_description
+        type: text
+        required: true
+        tab: marin.steamauth::lang.tabs.main
+      use_https:
+        label: marin.steamauth::lang.strings.use_https_label
+        comment: marin.steamauth::lang.strings.use_https_comment
+        description: marin.steamauth::lang.strings.use_https_description
+        type: switch
+        tab: marin.steamauth::lang.tabs.main
