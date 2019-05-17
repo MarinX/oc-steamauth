@@ -24,4 +24,4 @@ Route::get('/marin/steamauth/response', function(\Illuminate\Http\Request $reque
 
     return Redirect::to($redirectUrl)->with('steamerror', $auth->getError());
 
-});
+})->middleware('web');

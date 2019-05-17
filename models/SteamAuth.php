@@ -203,7 +203,7 @@ class SteamAuth
      */
     public function parseSteamID()
     {
-        preg_match("#^http://steamcommunity.com/openid/id/([0-9]{17,25})#", $this->request->get('openid_claimed_id'), $matches);
+        preg_match("#^https://steamcommunity.com/openid/id/([0-9]{17,25})#", $this->request->get('openid_claimed_id'), $matches);
         $this->steamId = is_numeric($matches[1]) ? $matches[1] : 0;
     }
 
